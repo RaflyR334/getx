@@ -26,14 +26,14 @@ class CounterView extends GetView<CounterController> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    c.tambahSatu();
+                    c.tambahsatu();
                   },
                   child: const Icon(Icons.add),
                 ),
                 const SizedBox(width: 20), // Space between buttons
                 ElevatedButton(
                   onPressed: () {
-                    c.kurangSatu();
+                    c.kurangsatu();
                   },
                   child: const Icon(Icons.remove),
                 ),

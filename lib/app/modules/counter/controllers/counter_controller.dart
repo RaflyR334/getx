@@ -1,20 +1,19 @@
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 
 class CounterController extends GetxController {
   RxInt bilangan = 0.obs;
 
-  void tambahSatu() {
+  void tambahsatu() {
     if (bilangan.value >= 20) {
-      Get.snackbar('Warning', 'Loba Teuing Cangkel');
+      Get.snackbar('Warning', 'Loba teuing bebel');
     } else {
       bilangan.value++;
     }
   }
 
-  void kurangSatu() {
-    if (bilangan.value >= 20) {
-      Get.snackbar('Warning', 'Minus!!');
+  void kurangsatu() {
+    if (bilangan.value <= 0) {
+      Get.snackbar('Warning', 'Saetik teuing bebel');
     } else {
       bilangan.value--;
     }
